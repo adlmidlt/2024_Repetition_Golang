@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_2"
+	"headfirstgo/lesson_3"
 )
 
 func main() {
@@ -23,5 +23,11 @@ func main() {
 	//lesson_2
 	//lesson_2.CallingMethod()
 	//lesson_2.PassFile()
-	lesson_2.Game()
+	//lesson_2.Game()
+
+	//lesson_3
+	//lesson_3.RepeatCode()
+	//lesson_3.CopyArguments()
+	//lesson_3.RefrigeratorWithMagnets()
+	lesson_3.Example()
 }

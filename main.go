@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_1"
+	"headfirstgo/lesson_2"
 )
 
 func main() {
 	fmt.Println("Repetition Golang!")
 
-	//lesson_1 50 страница
+	//lesson_1
 	//lesson_1.PrintText()
 	//lesson_1.CallingFunctions()
 	//lesson_1.ByThePool()
@@ -18,5 +18,10 @@ func main() {
 	//lesson_1.DeclaringVariablesThirdWay()
 	//lesson_1.RefrigeratorWithMagnets()
 	//lesson_1.Transformation()
-	lesson_1.Tax()
+	//lesson_1.Tax()
+
+	//lesson_2
+	//lesson_2.CallingMethod()
+	//lesson_2.PassFile()
+	lesson_2.Game()
 }

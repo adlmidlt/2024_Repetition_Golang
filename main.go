@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_3"
+	"headfirstgo/lesson_4"
 )
 
 func main() {
@@ -29,5 +29,9 @@ func main() {
 	//lesson_3.RepeatCode()
 	//lesson_3.CopyArguments()
 	//lesson_3.RefrigeratorWithMagnets()
-	lesson_3.Example()
+	//lesson_3.Example()
+
+	//lesson_4
+	//lesson_4.ToCelsius()
+	lesson_4.Constants()
 }

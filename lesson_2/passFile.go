@@ -1,25 +1,15 @@
 package lesson_2
 
 import (
-	"bufio"
 	"fmt"
+	"headfirstgo/lesson_4/keyboard"
 	"log"
-	"os"
-	"strconv"
-	"strings"
 )
 
 // PassFile - сообщает, сдал ли пользователь экзамен.
 func PassFile() {
 	fmt.Print("Enter a grade: ")
-	reader := bufio.NewReader(os.Stdin)
-	input, err := reader.ReadString('\n')
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	input = strings.TrimSpace(input)
-	grade, err := strconv.ParseFloat(input, 64)
+	grade, err := keyboard.GetFloat()
 	if err != nil {
 		log.Fatal(err)
 	}

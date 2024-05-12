@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_4"
+	"headfirstgo/lesson_6"
 )
 
 func main() {
@@ -33,5 +33,17 @@ func main() {
 
 	//lesson_4
 	//lesson_4.ToCelsius()
-	lesson_4.Constants()
+	//lesson_4.Constants()
+
+	//lesson_5
+	//lesson_5.Massive()
+	//lesson_5.Average()
+
+	// lesson_6
+	//lesson_6.Slices()
+	//lesson_6.Pool()
+	//lesson_6.BaseMassive()
+	//lesson_6.EditMassive()
+	lesson_6.AdvancedSlice()
+
 }

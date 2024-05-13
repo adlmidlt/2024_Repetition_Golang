@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_6"
+	"headfirstgo/lesson_7"
 )
 
 func main() {
@@ -47,6 +47,9 @@ func main() {
 	//lesson_6.AdvancedSlice()
 	//lesson_6.SliceAndNilValues()
 	//lesson_6.Average2()
-	lesson_6.Arguments()
+	//lesson_6.Arguments()
 
+	// lesson_7
+	//lesson_7.Count()
+	lesson_7.CountVoicesHard()
 }

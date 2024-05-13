@@ -44,6 +44,9 @@ func main() {
 	//lesson_6.Pool()
 	//lesson_6.BaseMassive()
 	//lesson_6.EditMassive()
-	lesson_6.AdvancedSlice()
+	//lesson_6.AdvancedSlice()
+	//lesson_6.SliceAndNilValues()
+	//lesson_6.Average2()
+	lesson_6.Arguments()
 
 }

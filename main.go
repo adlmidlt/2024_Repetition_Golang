@@ -51,5 +51,10 @@ func main() {
 
 	// lesson_7
 	//lesson_7.Count()
-	lesson_7.CountVoicesHard()
+	//lesson_7.CountVoicesHard()
+	//lesson_7.Maps()
+	//lesson_7.Status("Alma")
+	//lesson_7.Status("Carl")
+	//lesson_7.Example()
+	lesson_7.CountVoicesEasy()
 }

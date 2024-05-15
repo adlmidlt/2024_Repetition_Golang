@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_7"
+	"headfirstgo/lesson_8"
 )
 
 func main() {
@@ -56,5 +56,10 @@ func main() {
 	//lesson_7.Status("Alma")
 	//lesson_7.Status("Carl")
 	//lesson_7.Example()
-	lesson_7.CountVoicesEasy()
+	//lesson_7.CountVoicesEasy()
+
+	// lesson_8
+	//lesson_8.PrintMyStruct()
+	lesson_8.PrintSubscriberStruct()
+
 }

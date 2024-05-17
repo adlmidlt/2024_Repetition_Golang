@@ -8,23 +8,34 @@ var myStruct struct {
 	toggle bool
 }
 
-var subscriber struct {
-	name   string
-	rate   float64
-	active bool
+type part struct {
+	descriptions string
+	count        int
 }
 
-func Print() {
-
+func showInfo(p part) {
+	fmt.Println("Description:", p.descriptions)
+	fmt.Println("Count:", p.count)
 }
 
-func PrintSubscriberStruct() {
-	subscriber.name = "Aman Singh"
-	subscriber.rate = 4.99
-	subscriber.active = true
-	fmt.Println("Name:", subscriber.name)
-	fmt.Println("Rate:", subscriber.rate)
-	fmt.Println("Active?:", subscriber.active)
+func StartShowInfo() {
+	var bolts part
+	bolts.descriptions = "Hex bolts"
+	bolts.count = 24
+	showInfo(bolts)
+}
+
+func minimumOrder(description string) part {
+	var p part
+	p.descriptions = description
+	p.count = 100
+
+	return p
+}
+
+func StartMinimumOrder() {
+	p := minimumOrder("Hex bolts")
+	fmt.Println(p.descriptions, p.count)
 }
 
 func PrintMyStruct() {

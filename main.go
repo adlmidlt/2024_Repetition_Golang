@@ -60,6 +60,10 @@ func main() {
 
 	// lesson_8
 	//lesson_8.PrintMyStruct()
-	lesson_8.PrintSubscriberStruct()
-
+	//lesson_8.PrintSubscriberStruct()
+	//lesson_8.StartShowInfo()
+	//lesson_8.StartMinimumOrder()
+	//lesson_8.StartSubscriber()
+	//lesson_8.StartNitroBoost()
+	lesson_8.StartEmployee()
 }

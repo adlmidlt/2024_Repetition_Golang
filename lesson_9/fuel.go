@@ -6,20 +6,42 @@ type Liters float64
 type Gallons float64
 type Milliliters float64
 
-func ToGallons(l Liters) Gallons {
+func (l Liters) ToGallons() Gallons {
 	return Gallons(l * 0.264)
 }
 
-func ToLiters(g Gallons) Liters {
+func (m Milliliters) ToGallons() Gallons {
+	return Gallons(m * 0.000264)
+}
+
+func (g Gallons) ToMilliliters() Milliliters {
+	return Milliliters(g * 3785.41)
+}
+
+func (g Gallons) ToLiters() Liters {
 	return Liters(g * 3.785)
 }
 
-func StartFuel() {
-	carFuel := Gallons(1.2)
-	busFuel := Liters(4.5)
-	carFuel += ToGallons(Liters(40.0))
-	busFuel += ToLiters(Gallons(30.0))
+func (l Liters) ToMilliliters() Milliliters {
+	return Milliliters(l * 1000)
+}
 
-	fmt.Printf("Car fuel: %.1f gallons\n", carFuel)
-	fmt.Printf("Bus fuel: %.1f liters\n", busFuel)
+func (m Milliliters) ToLitters() Liters {
+	return Liters(m / 1000)
+}
+
+func StartFuel() {
+	soda := Liters(2)
+	fmt.Printf("%.3f liters equals %.3f gallons\n", soda, soda.ToGallons())
+	water := Milliliters(500)
+	fmt.Printf("%.3f milliliters equals %.3f gallons\n", water, water.ToGallons())
+
+	milk := Gallons(2)
+	fmt.Printf("%.3f gallons equals %.3f liters\n", milk, milk.ToLiters())
+	fmt.Printf("%.3f gallons equals %.3f milliliters\n", milk, milk.ToMilliliters())
+
+	l := Liters(3)
+	fmt.Printf("%.1f liters is %.1f milliliters\n", l, l.ToMilliliters())
+	m1 := Milliliters(500)
+	fmt.Printf("%.1f milliliters is %.1f liters\n", m1, m1.ToLitters())
 }

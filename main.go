@@ -67,4 +67,6 @@ func main() {
 	//lesson_8.StartNitroBoost()
 	//lesson_8.StartEmployee()
 	lesson_9.StartFuel()
+	//lesson_9.Example()
+
 }

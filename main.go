@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_9"
+	"headfirstgo/lesson_10"
 )
 
 func main() {
@@ -66,7 +66,8 @@ func main() {
 	//lesson_8.StartSubscriber()
 	//lesson_8.StartNitroBoost()
 	//lesson_8.StartEmployee()
-	lesson_9.StartFuel()
+	//lesson_9.StartFuel()
 	//lesson_9.Example()
+	lesson_10.StartDate()
 
 }

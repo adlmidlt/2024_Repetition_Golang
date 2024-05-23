@@ -44,6 +44,12 @@ func StartEvent() {
 		log.Fatal(err)
 	}
 
+	err = event.SetTitle("An extremely long")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(event.Title())
 	fmt.Println(event.Year())
 	fmt.Println(event.Month())
 	fmt.Println(event.Day())

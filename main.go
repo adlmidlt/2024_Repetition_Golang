@@ -76,10 +76,12 @@ func main() {
 	//lesson_10.StartEvent()
 
 	// lesson_11
-	lesson_11.StartPlayList()
+	//lesson_11.StartPlayList()
 	//lesson_11.StartExample()
 	//lesson_11.StartAnyInterface()
 	//lesson_11.StartMyInterface()
 	//lesson_11.StartMakeSound()
+	//lesson_11.StartExampleError()
+	lesson_11.StartAnything()
 
 }

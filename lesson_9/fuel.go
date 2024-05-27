@@ -3,8 +3,22 @@ package lesson_9
 import "fmt"
 
 type Liters float64
+
+func (l Liters) String() string {
+	return fmt.Sprintf("%.2f L", l)
+}
+
 type Gallons float64
+
+func (g Gallons) String() string {
+	return fmt.Sprintf("%.2f gal", g)
+}
+
 type Milliliters float64
+
+func (m Milliliters) String() string {
+	return fmt.Sprintf("%.2f mL", m)
+}
 
 func (l Liters) ToGallons() Gallons {
 	return Gallons(l * 0.264)
@@ -44,4 +58,12 @@ func StartFuel() {
 	fmt.Printf("%.1f liters is %.1f milliliters\n", l, l.ToMilliliters())
 	m1 := Milliliters(500)
 	fmt.Printf("%.1f milliliters is %.1f liters\n", m1, m1.ToLitters())
+
+	fmt.Printf("%.2f gal\n", Gallons(12.09248342))
+	fmt.Printf("%.2f L\n", Liters(12.09248342))
+	fmt.Printf("%.2f mL\n", Milliliters(12.09248342))
+
+	fmt.Println(Gallons(12.09248342).String())
+	fmt.Println(Liters(12.09248342).String())
+	fmt.Println(Milliliters(12.09248342).String())
 }

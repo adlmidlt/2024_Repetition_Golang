@@ -7,6 +7,18 @@ type Player interface {
 	Stop()
 }
 
+func TryOut(player Player) {
+	player.Play("Test Track")
+	player.Stop()
+
+	recorder, ok := player.(TapeRecorder)
+	if ok {
+		recorder.Record()
+	} else {
+		fmt.Println("Player was not TapeRecorder")
+	}
+}
+
 type TapePlayer struct {
 	Batteries string
 }

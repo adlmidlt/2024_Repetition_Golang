@@ -15,4 +15,6 @@ func StartPlayList() {
 	playList(player, mixtape)
 	player = gadget.TapeRecorder{}
 	playList(player, mixtape)
+
+	gadget.TryOut(gadget.TapePlayer{})
 }

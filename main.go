@@ -79,5 +79,7 @@ func main() {
 	lesson_11.StartPlayList()
 	//lesson_11.StartExample()
 	//lesson_11.StartAnyInterface()
+	//lesson_11.StartMyInterface()
+	//lesson_11.StartMakeSound()
 
 }

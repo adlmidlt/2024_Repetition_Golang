@@ -81,7 +81,7 @@ func main() {
 	//lesson_11.StartAnyInterface()
 	//lesson_11.StartMyInterface()
 	//lesson_11.StartMakeSound()
-	//lesson_11.StartExampleError()
-	lesson_11.StartAnything()
+	lesson_11.StartExampleError()
+	//lesson_11.StartAnything()
 
 }

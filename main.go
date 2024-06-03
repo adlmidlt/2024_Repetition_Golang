@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"headfirstgo/lesson_12"
+	"headfirstgo/lesson_13"
 )
 
 func main() {
@@ -84,6 +84,10 @@ func main() {
 	//lesson_11.StartExampleError()
 	//lesson_11.StartAnything()
 
-	lesson_12.StartRefrigerator()
+	// lesson_12
+	// lesson_12.StartRefrigerator()
+
+	// lesson_13
+	lesson_13.HttpNet()
 
 }
